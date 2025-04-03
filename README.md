@@ -1,9 +1,11 @@
-ConectFacil
-🛍️ Plataforma de Recargas Online
-💬 Descrição
+# ConectFacil
+
+# 🛍️ Plataforma de Recargas Online
+
+### 💬 Descrição
 Com essa plataforma você consegue recarregar seu aplicativo favorito, em questão de minutos.
 
-⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
 ✅ Sistema de Autenticação robusto, com bloqueios de tentativas, JWT token, bloqueio de ip do usuario e limite de tentativas.
 
@@ -22,7 +24,7 @@ Com essa plataforma você consegue recarregar seu aplicativo favorito, em quest�
 ✅ Interface Intuitiva: TaiwindCSS e alertas bonitos com SweetAlert, Toastify.
 
 
-🤖 Linguagens e Tecnologias Utilizadas
+### 🤖 Linguagens e Tecnologias Utilizadas
 
 <p align="left">
   <a href="https://skillicons.dev">
