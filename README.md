@@ -31,3 +31,9 @@ Com essa plataforma você consegue recarregar seu aplicativo favorito, em quest�
     <img src="https://skillicons.dev/icons?i=git,html,css,react,php,mysql" />
   </a>
 </p>
+
+### 🔗 Veja o Projeto
+http://conectfacil.recargatvbox.com/
+
+Login: usuario1@admin.com
+Senha: admin
