@@ -1,0 +1,69 @@
+Recebido: 
+Recebido: Array
+(
+    [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NldXNpdGUuY29tIiwiYXVkIjoiaHR0cHM6Ly9zZXVzaXRlLmNvbSIsIklwIjoiOjoxIiwiaWF0IjoxNzQzMjgyNDE4LCJleHAiOjE3NDMyODYwMTgsInVzZXJfaWQiOjEsImVtYWlsIjoidXN1YXJpbzFAYWRtaW4uY29tIn0.OPswsvFUFINjy9sU2AhIHd1yYgzAQ0IQknOxPCpJEQQ
+    [codigo] => ERP
+)
+
+Cupom encontrado: Array
+(
+    [id] => 32
+    [codigo] => ERP
+    [desconto] => 10.00
+    [tipo] => percent
+    [validade] => 2025-04-05 18:15:00
+    [maxuse] => 10
+    [usos] => 0
+    [valido] => 1
+    [produtos] => ["1"]
+    [created] => 2025-03-29 18:15:22
+    [updated] => 2025-03-29 18:15:22
+)
+
+Cupom deletado com sucesso: ERP
+Recebido: 
+Recebido: Array
+(
+    [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NldXNpdGUuY29tIiwiYXVkIjoiaHR0cHM6Ly9zZXVzaXRlLmNvbSIsIklwIjoiOjoxIiwiaWF0IjoxNzQzMjgyNDE4LCJleHAiOjE3NDMyODYwMTgsInVzZXJfaWQiOjEsImVtYWlsIjoidXN1YXJpbzFAYWRtaW4uY29tIn0.OPswsvFUFINjy9sU2AhIHd1yYgzAQ0IQknOxPCpJEQQ
+    [codigo] => ROBERIOTECLADOS
+)
+
+Cupom encontrado: Array
+(
+    [id] => 44
+    [codigo] => ROBERIOTECLADOS
+    [desconto] => 1.00
+    [tipo] => percent
+    [validade] => 2025-04-05 18:35:00
+    [maxuse] => 10
+    [usos] => 0
+    [valido] => 1
+    [produtos] => ["1"]
+    [created] => 2025-03-29 18:35:17
+    [updated] => 2025-03-29 18:35:17
+)
+
+Cupom deletado com sucesso: ROBERIOTECLADOS
+Recebido: 
+Recebido: Array
+(
+    [token] => eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NldXNpdGUuY29tIiwiYXVkIjoiaHR0cHM6Ly9zZXVzaXRlLmNvbSIsIklwIjoiOjoxIiwiaWF0IjoxNzQzMjgyNDE4LCJleHAiOjE3NDMyODYwMTgsInVzZXJfaWQiOjEsImVtYWlsIjoidXN1YXJpbzFAYWRtaW4uY29tIn0.OPswsvFUFINjy9sU2AhIHd1yYgzAQ0IQknOxPCpJEQQ
+    [codigo] => TOMILYPEA
+)
+
+Cupom encontrado: Array
+(
+    [id] => 41
+    [codigo] => TOMILYPEA
+    [desconto] => 5.00
+    [tipo] => percent
+    [validade] => 2025-04-05 18:33:00
+    [maxuse] => 10
+    [usos] => 0
+    [valido] => 1
+    [produtos] => ["1"]
+    [created] => 2025-03-29 18:33:34
+    [updated] => 2025-03-29 18:33:34
+)
+
+Cupom deletado com sucesso: TOMILYPEA
