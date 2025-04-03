@@ -1,0 +1,152 @@
+/* Estilos Globais */
+
+/* Container principal com largura máxima e centralização */
+.h-full {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Definição de variáveis de cores */
+:root {
+  --corPrincipal: #4F46E5;
+  --corSecundaria: #7972EE;
+  --corTexto1: #fff;
+  /* --tw-ring-color: var(--corPrincipal) !important;  <- Comentário: Parece ser específico de Tailwind CSS, manter comentado se não estiver usando */
+}
+
+/* Classe para aplicar a cor principal como fundo */
+.corPrincipalBg {
+  background-color: var(--corPrincipal);
+}
+
+/* ==========================================================================
+   Menu Lateral
+   ========================================================================== */
+
+.menu-lateral {
+  position: fixed; /* Fixa o menu na tela */
+  left: 0;
+  top: 0;
+  z-index: 3; /* Garante que o menu fique acima de outros elementos */
+  transform: translateX(-100%); /* Inicialmente escondido fora da tela */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Animação suave para abrir/fechar */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* --------------------------------------------------------------------------
+   Menu Lateral - Versão Mobile (Largura máxima de 968px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 968px) {
+  .menu-lateral {
+    width: 100%; /* O menu ocupa toda a largura em dispositivos móveis */
+  }
+
+  .menu-lateral.menu-aberto {
+    transform: translateX(0); /* Mostra o menu quando a classe 'menu-aberto' é adicionada */
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Menu Lateral - Versão Desktop (Largura mínima de 969px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 969px) {
+  .menu-lateral {
+    width: 20rem; /* Largura fixa do menu em desktops */
+    position: relative; /* Remove o comportamento fixed para desktop */
+    transform: translateX(0); /* O menu já é visível por padrão */
+  }
+
+  .menu-overlay {
+    display: none; /* O overlay não é necessário em desktops */
+  }
+}
+
+/* ==========================================================================
+   Overlay do Menu (para dispositivos móveis)
+   ========================================================================== */
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+  opacity: 0; /* Inicialmente invisível */
+  visibility: hidden; /* Garante que não seja clicável inicialmente */
+  transition: all 0.3s ease-in-out; /* Animação suave para aparecer/desaparecer */
+  z-index: 3; /* Garante que o overlay fique acima do conteúdo principal */
+}
+
+.menu-overlay.visible {
+  opacity: 1; /* Torna o overlay visível */
+  visibility: visible; /* Torna o overlay clicável */
+}
+
+/* ==========================================================================
+   Wrapper do Conteúdo Principal
+   ========================================================================== */
+
+.content-wrapper {
+  transition: margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Animação suave para o deslocamento do conteúdo */
+}
+
+/* --------------------------------------------------------------------------
+   Wrapper do Conteúdo Principal - Versão Desktop
+   -------------------------------------------------------------------------- */
+@media (min-width: 969px) {
+  aside {
+    position: fixed !important;
+  }
+
+  #conteudo {
+    width: calc(100% - 20rem);
+    margin-left: 20rem;
+  }
+
+  #botao-abrir-menu {
+    display: none; /* Esconde o botão de abrir menu em desktops */
+  }
+
+  #botao-fechar-menu {
+    display: none; /* Esconde o botão de fechar menu em desktops */
+  }
+
+  .content-wrapper {
+    margin-left: 280px; /* Empurra o conteúdo para a direita para dar espaço ao menu fixo */
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Wrapper do Conteúdo Principal - Estado do Menu Fechado (Mobile)
+   -------------------------------------------------------------------------- */
+.content-wrapper.menu-closed {
+  margin-left: 0; /* O conteúdo ocupa toda a largura quando o menu está fechado (em mobile) */
+}
+
+/* ==========================================================================
+   Estilo dos Itens do Menu
+   ========================================================================== */
+
+.menu-item {
+  transition: all 0.3s ease; /* Animação suave para interações */
+  position: relative; /* Necessário para o efeito de hover */
+  overflow: hidden; /* Garante que o pseudo-elemento não vaze */
+}
+
+.menu-item::before {
+  content: ''; /* Conteúdo vazio necessário para o pseudo-elemento */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0; /* Inicialmente com largura zero */
+  background-color: rgba(255, 255, 255, 0.1); /* Cor do efeito de hover */
+  transition: width 0.3s ease; /* Animação da largura */
+}
+
+.menu-item:hover::before {
+  width: 100%; /* Expande a largura ao passar o mouse */
+}
